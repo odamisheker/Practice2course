@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Contact</title>
+    <link rel="stylesheet" href="/css/addContact.css" type="text/css">
+</head>
+<body>
+<div class="container">
+    <h1 class="text">Enter Contact</h1>
+    <img src="/images/pplIcon.jpg" alt="person" class="imagess">
+
+    <form action="/contact/add" method="post" th:action="@{/contact/add}" th:object="${contact}" class="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required class="input-field">
+        <br>
+        <label for="number">Number:</label>
+        <input type="text" id="number" name="number" required class="input-field">
+        <br>
+        <button type="submit" class="submit-button">Submit</button>
+    </form>
+
+    <a href="/contact" class="view-link">View Phone Book</a>
+    <form th:action="@{/logout}" method="post">
+        <button type="submit" class="logout-button">Logout</button>
+    </form>
+</div>
+</body>
+</html>

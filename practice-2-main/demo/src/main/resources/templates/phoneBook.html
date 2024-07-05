@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Phone Book</title>
+    <link rel="stylesheet" href="/css/phoneBook.css" type="text/css">
+</head>
+<body>
+<div class="container">
+    <h1 class="text">Phone Book</h1>
+
+    <div class="contact-list">
+        <div th:each="contact : ${contacts}" class="contact-item">
+            <div class="contact-details">
+                <div class="contact-name" th:text="${contact.name}"></div>
+                <div class="contact-number" th:text="${contact.number}"></div>
+            </div>
+            <div class="contact-actions">
+                <a th:href="@{/contact/delete/{id}(id=${contact.id})}" class="delete-button">Delete</a>
+            </div>
+        </div>
+    </div>
+
+    <a href="/contact/add" class="add-contact-link">Add Contact</a>
+    <a href="/logout" class="logout-button">Logout</a>
+</div>
+</body>
+</html>

@@ -1,0 +1,84 @@
+/* styles.css */
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.text {
+    font-size: 24px;
+    color: #333;
+}
+
+/* Список контактов */
+.contact-list {
+    margin-top: 20px;
+}
+
+.contact-item {
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact-details {
+    text-align: left;
+}
+
+.contact-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.contact-number {
+    color: #666;
+}
+.delete-button {
+    color: #fff;
+    background-color: #e74c3c;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+    background-color: #c0392b;
+}
+.add-contact-link {
+    display: inline-block;
+    margin-top: 20px;
+    color: #007bff;
+    text-decoration: none
+}
+.add-contact-link:hover {
+    text-decoration: underline;
+}
+
+.logout-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #f44336;
+    color: white;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+
+}
+
+.logout-button:hover {
+    background-color: #cc0000;
+}
